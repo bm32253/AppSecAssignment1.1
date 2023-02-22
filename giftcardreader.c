@@ -187,6 +187,8 @@ struct this_gift_card *gift_card_reader(FILE *input_fd) {
 
 		// Make something the size of the rest and read it in
 		ptr = malloc(ret_val->num_bytes);
+		//crash1
+		GiftCardz.com                   DuaneGreenes Store 1451         [ insert crypto signature here ]
 		fread(ptr, ret_val->num_bytes, 1, input_fd);
 
         optr = ptr-4;

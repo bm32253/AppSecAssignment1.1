@@ -34,7 +34,7 @@ void animate(char *msg, unsigned char *program) {
                 *mptr = regs[arg1];
                 break;
             case 0x03:
-                mptr += (char)arg1;
+                if (mptr < (msg + 31)) mptr += (char)arg1;
                 break;
             case 0x04:
                 regs[arg2] = arg1;
